@@ -1,0 +1,84 @@
+            .nav1   {
+			          background:rgba(0,0,0,0);
+					  min-height:30px;
+					  margin:10px;
+					  
+					}
+			.tlist	{
+			         transition: 0.5s;
+                     color:#F0F0F0;
+			         font-size: 20px; 
+			         font-family:Josefin Sans;
+                     margin: 0px 40px;
+                    }
+			.tlist:hover{
+			             color:#070707;
+						 border-radius:5%;
+						 padding:20px;
+					    }
+			.nav1>ul>li>a:hover, .nav>li>a:focus { 
+                                                   border-color:#F0F0F0;
+                                                   background-color: #F0F0F0;
+												   box-shadow:0px 0px 30px rgba(0,0,0,0.5);
+												  } 
+			.brand1{color:#F0F0F0;
+			        font-family:Josefin Sans;
+					font-size:40px;
+					margin-left:10px;
+					transition:0.2s;
+					}
+			.nav2   {
+			          background:rgba(0,0,0,0);
+					  min-height:70px;
+					  margin:40px 0px;
+					}
+			.blist  {
+                      transition: 0.5s;
+                      color:#F0F0F0;
+			          font-size: 23px; 
+			          font-family:Josefin Sans;
+                      margin: 0 45px;
+					  
+                }
+            .blist:hover { color:#f0f0f0;
+					       font-size:25px;
+                           padding:20px;
+					       box-shadow:0px 0px 60px rgba(0,0,0,0.5);
+						   border-radius:5%;
+						   
+                      }	
+		    .nav2>ul>li>a:hover, .nav>li>a:focus {
+                                                   border-color:#F0F0F0;
+                                                   background-color: rgba(255,255,255,0.3);
+												  }
+			.active{
+			          transition: 0.3s;
+                      color:#F0F0F0;
+			          font-size: 25px; 
+			          font-family:Josefin Sans;
+					  margin:0px 40px;
+                      border-bottom:1px solid #F0F0F0;
+                    }
+			.active:hover{
+			               color:#070707;
+						   border-radius:5%;
+						   box-shadow:0px 0px 30px rgba(0,0,0,0.5);
+						  }
+			#logo{
+	              transition:1.5s;
+				  opacity: 0.8;
+                  filter: alpha(opacity=80);
+                }
+		    #logo:hover{
+				        opacity: 1.0;
+                        filter: alpha(opacity=100);
+						}
+			#logo1{
+	              transition:0.9s;
+				  opacity: 0.5;
+                  filter: alpha(opacity=50);
+                }
+		    #logo1:hover{
+				        opacity: 1.0;
+                        filter: alpha(opacity=100);
+						}			

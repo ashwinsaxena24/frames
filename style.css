@@ -1,0 +1,84 @@
+            .nav1   {
+			          background:rgba(0,0,0,0);
+					  min-height:50px;
+					  margin:10px;
+					}
+			.tlist	{
+			         transition: 0.3s;
+                     color:#F0F0F0;
+			         font-size: 20px; 
+			         font-family:Josefin Sans;
+                     margin: 0px 40px; 
+			        }
+			.tlist:hover{
+				         color:#070707;
+						 border-radius:5%;
+						 padding:20px;
+						 box-shadow:0px 0px 30px rgba(0,0,0,0.5);
+						}
+			.nav1>ul>li>a:hover, .nav>li>a:focus { 
+                                                   border-color:#F0F0F0;
+                                                   background-color: #F0F0F0;
+												  } 
+			.brand1{color:#F0F0F0;
+			        font-family:Josefin Sans;
+					font-size:40px;
+					margin-left:10px;
+					transition:0.2s;
+					}
+			.nav2   {
+			          background:rgba(222,221,221,1.0);
+                      min-height:75px;
+					  margin:0px 0px 0px 0px;
+					  box-shadow:0px 0px 60px rgba(0,0,0,1.0);
+					}
+			.blist  {
+                      transition: 0.3s;
+                      color:#292929;
+			          font-size: 20px; 
+			          font-family:Josefin Sans;
+                      margin: 0px 40px;
+                }
+            .blist:hover { color: #000000;
+					       font-size:25px;
+                           padding:20px;
+					       border-top: 2px solid;
+                      }	
+		    .nav2>ul>li>a:hover, .nav>li>a:focus {
+                                                   border-color:#000000;
+                                                   background-color: transparent;
+                                                 }
+			.active{ 
+			          transition: 0.3s;
+                      color:#292929;
+			          font-size: 30px; 
+			          font-family:Josefin Sans;
+                      margin: 0 40px; 
+					  border-top:3px solid #000000;
+					}
+			.active:hover{
+			               color:#070707;
+						  }
+			.well{
+	               background:url("i/bg2_blur.jpg");
+				   background-size:100%;
+			       border-color:rgba(0,0,0,0);
+			       margin:5px 15px 90px 15px;
+				   box-shadow:0px 0px 90px #000;
+                 }
+			.img{
+	              border:1px solid rgba(255,255,255,0.4);
+	 	          border-radius:4%;
+			      width:230px;
+			      height:auto;
+			      transition:0.4s;
+                }
+		    .img:hover{
+			            border:1px solid rgba(255,255,255,0.8);
+			            box-shadow:0px 0px 20px black;
+						border-radius:2%;
+			          }
+			.marl{
+		          margin-left:30px;
+			     }
+				 

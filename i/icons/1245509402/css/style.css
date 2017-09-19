@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	margin: 75px 0;
+	background:#000;
+}
+
+.box_item{
+	width: 110px;
+	height: auto;
+	display: flex;
+	align-items: center;
+	background-image:url("i/icons/waiting.png");
+	width:110px;
+	height:auto;
+    transition:0.3s;
+	padding: 20px;
+}
+
+.box_item:hover{
+	font-size: 0;
+}
+
+.box_item:hover:after{
+	content: attr(data-hover);
+	font-size: 2px;
+	line-height: 28px;
+	font-weight: 200;
+	text-align: center;
+}

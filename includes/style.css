@@ -1,0 +1,15 @@
+#add {
+    
+    width: 25%;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-image: url(bg2.jpg);
+    border-radius: 15px;
+    color: white;
+}
+
+input {
+    border: 3px solid red;
+    background: red;
+}
+
