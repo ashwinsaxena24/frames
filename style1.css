@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
             .nav1   {
 			          background:rgba(0,0,0,0);
 					  min-height:30px;
@@ -5,7 +6,7 @@
 					  
 					}
 			.tlist	{
-			         transition: 0.5s;
+			         transition: 0.2s;
                      color:#F0F0F0;
 			         font-size: 20px; 
 			         font-family:Josefin Sans;
@@ -14,7 +15,7 @@
 			.tlist:hover{
 			             color:#070707;
 						 border-radius:5%;
-						 padding:20px;
+						 padding:17px;
 					    }
 			.nav1>ul>li>a:hover, .nav>li>a:focus { 
                                                    border-color:#F0F0F0;
@@ -30,26 +31,29 @@
 			.nav2   {
 			          background:rgba(0,0,0,0);
 					  min-height:70px;
-					  margin:40px 0px;
+					  margin:0px 0px 40px 0px;
 					}
 			.blist  {
-                      transition: 0.5s;
+                      transition: 0.3s;
                       color:#F0F0F0;
-			          font-size: 23px; 
+			          font-size: 25px; 
 			          font-family:Josefin Sans;
-                      margin: 0 45px;
+                      margin: 0 35px;
+                      
+                      border-radius: 6%;
+                      border-bottom: 1px dashed #f0f0f0;
 					  
                 }
-            .blist:hover { color:#f0f0f0;
+            .blist:hover { color:#000;
 					       font-size:25px;
-                           padding:20px;
+                           padding:18px;
 					       box-shadow:0px 0px 60px rgba(0,0,0,0.5);
 						   border-radius:5%;
 						   
                       }	
-		    .nav2>ul>li>a:hover, .nav>li>a:focus {
-                                                   border-color:#F0F0F0;
-                                                   background-color: rgba(255,255,255,0.3);
+		    .nav2>ul>li>a:hover, .nav>li>a:focus { border-bottom: 1px dashed #000;
+                                                   
+                                                   background-color: rgba(255,255,255,0.2);
 												  }
 			.active{
 			          transition: 0.3s;
@@ -82,3 +86,4 @@
 				        opacity: 1.0;
                         filter: alpha(opacity=100);
 						}			
+						

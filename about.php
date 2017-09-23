@@ -49,7 +49,7 @@
       		<img class="ico" id="logo1" src="i/icons/chat.ico">
 			   <p class="text">Whatsapp only</p></div>
 		<div style="margin:0px 30px" class="col-xs-2">	   
-		  <a href="mailto:framesbyjs@gmail.com" target="_blank">	
+		  <a href="mailto:sirohijai22@gmail.com" target="_blank">	
 			<img class="ico" id="logo1" src="i/icons/email.ico">
 			   <p class="text">sirohijai22@gmail.com</p></a></div>
 			

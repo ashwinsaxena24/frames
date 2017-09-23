@@ -1,12 +1,35 @@
 <html>
     <head>
 	<link rel="shortcut icon" href="i/icons/logo.ico"/>
-	<title>Frames</title>
+	<title>Best Shots</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="style1.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<link  href="fancybox-3.0/dist/jquery.fancybox.min.css" rel="stylesheet">
     <script src="fancybox-3.0/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript">
+    	/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+    </script>
         <style>
 		    body    {
 		              background:url("i/bg2_blur.jpg");
@@ -28,7 +51,7 @@
 			.well{ border-color:rgba(0,0,0,0);
 			       background:rgba(255,255,255,0.1);
                    margin:20px 20px 20px 0px;
-				   box-shadow:2px 2px 20px #000;
+				   box-shadow:2px 2px 20px rgba(0,0,0,0.5);
                    border-radius:2%;
                    width:100%;				   
                   } 
@@ -40,7 +63,70 @@
 				 text-shadow:1px 1px 10px rgba(0,0,0,0.9);
 			    }
             a:hover{text-decoration:none;}
-            a:focus{text-decoration:none; outline:0 !important;}			
+            a:focus{text-decoration:none; outline:0 !important;}
+           /* Dropdown Button*/ 
+.dropbtn {
+    font-size: 20px;
+    font-family:Josefin Sans;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    color: #F0F0F0;
+    margin: 7px 20px;
+    padding: 7px 10px;
+    transition: 0.2s;
+}
+
+/*Dropdown button on hover & focus*/
+.dropbtn:hover{
+   color:#070707;
+   border-radius:5%;
+   padding: 8px 12px;	
+   background-color: #F0F0F0;
+   box-shadow:0px 0px 30px rgba(0,0,0,0.5);
+}
+.dropbtn:focus{
+	border:0px;
+}
+/* The container <div> - needed to position the dropdown content*/ 
+.dropdown {
+    
+    position: relative;
+    display: list-item;
+
+}
+
+/* Dropdown Content (Hidden by Default)*/ 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(255,255,255,0.9);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    font-family:Josefin Sans;
+    font-size: 18px;
+    z-index: 1;
+    border-radius: 1%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+}
+
+/* Change color of dropdown links on hover*/ 
+.dropdown-content a:hover {background-color: rgba(177,80,0,0.5);border-radius:3%; font-size: 22px ;padding: 20px;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) 
+.show {display:block;} */
+
+
 		</style>
 	<body>
 	    <nav class = "navbar nav1" >   
@@ -52,9 +138,25 @@
 		        <li><a href="index.php" class="tlist">Home</a></li>
 				<li><a  class="active">Best Shots</a></li>
 		        <li><a href = "about.php" class="tlist">About</a></li>
-				<li><div class="margin-top:25px" style="font-size: 30px; font-family:Josefin Sans; color:#F0F0F0">|</div></li>
-		    </ul>
+				<li><div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Categories</button>
+                
+                <div id="myDropdown" class="dropdown-content">
+                <?php
+                	$ping = 'pong';
+                	require 'includes/variables.php';
+                	foreach ($categories as $c) {
+                		$upper = ucfirst($c);
+                		echo "<a href='main.php?cat=$c'>$upper</a>";
+                	}
+                ?>
+                </div>
+    			</div></li>
+		    <li><div class="margin-top:25px" style="font-size: 30px; font-family:Josefin Sans; color:#F0F0F0">|</div></li>
+				</ul>
         </nav>
+				
+				
         <div class=" container-fluid">
         <div class="well row">
 	    <div class="col-xs-4" >   
